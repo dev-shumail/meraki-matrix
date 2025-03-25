@@ -38,6 +38,10 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- Lottie Animation Script -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
   </head>
 
   <body class="index-page">
@@ -386,13 +390,12 @@
                     empowering you to achieve more, faster.
                   </p>
                 </div>
-                <div class="col-lg-6 order-1 order-lg-2 text-center">
-                  <img
-                    src="assets/img/features/generative.svg"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </div>
+
+                <!-- Lottie goes here -->
+                <div
+                  class="col-lg-6 order-1 order-lg-2 text-center"
+                  id="ai-development-lottie"
+                ></div>
               </div>
             </div>
             <!-- End Tab Content Item -->
@@ -452,13 +455,13 @@
                     empowering you to achieve more, faster.
                   </p>
                 </div>
-                <div class="col-lg-6 order-1 order-lg-2 text-center">
-                  <img
-                    src="assets/img/features/game.svg"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </div>
+
+                <!-- Lottie goes here -->
+
+                <div
+                  class="col-lg-6 order-1 order-lg-2 text-center"
+                  id="game-development-lottie"
+                ></div>
               </div>
             </div>
             <!-- End Tab Content Item -->
@@ -521,13 +524,10 @@
                     optimize, automate, and scale web operations globally.
                   </p>
                 </div>
-                <div class="col-lg-6 order-1 order-lg-2 text-center">
-                  <img
-                    src="assets/img/working-3.jpg"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </div>
+                <div
+                  class="col-lg-6 order-1 order-lg-2 text-center"
+                  id="web-development-lottie"
+                ></div>
               </div>
             </div>
             <!-- End Tab Content Item -->
@@ -589,13 +589,11 @@
                     application deployment worldwide.
                   </p>
                 </div>
-                <div class="col-lg-6 order-1 order-lg-2 text-center">
-                  <img
-                    src="assets/img/working-4.jpg"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </div>
+                <!-- Lottie goes here -->
+                <div
+                  class="col-lg-6 order-1 order-lg-2 text-center"
+                  id="mobile-development-lottie"
+                ></div>
               </div>
             </div>
             <!-- End Tab Content Item -->
@@ -768,6 +766,75 @@
                   implement automated and manual testing strategies to identify
                   and resolve issues early, ensuring robust, bug-free
                   applications with efficient CI/CD pipelines.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-diagram-3" style="color: #007074"></i>
+                </div>
+                <a href="javascript:void(0)" class="stretched-link">
+                  <h3>DevOps</h3>
+                </a>
+                <p>
+                  We streamline development and operations by implementing CI/CD
+                  pipelines, automated deployments, and infrastructure as code
+                  (IaC). With cloud-native solutions, containerization (Docker,
+                  Kubernetes), and proactive monitoring, we help businesses
+                  achieve operational efficiency.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-joystick" style="color: #6c48c5"></i>
+                </div>
+                <a href="javascript:void(0)" class="stretched-link">
+                  <h3>Game Development</h3>
+                </a>
+                <p>
+                  We craft immersive gaming experiences with cutting-edge
+                  graphics, seamless gameplay mechanics, and cross-platform
+                  compatibility. Our expertise spans Unity, Unreal Engine, and
+                  custom game engines, enabling us to build high-performance
+                  games for PC, consoles, and mobile.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-stack" style="color: #9ade7b"></i>
+                </div>
+                <a href="javascript:void(0)" class="stretched-link">
+                  <h3>Full Stack</h3>
+                </a>
+                <p>
+                  We build scalable, high-performance applications by seamlessly
+                  integrating frontend, backend, and database solutions. Our
+                  expertise includes modern frameworks like React, Angular, and
+                  Vue for dynamic UIs, along with robust backend technologies
+                  such as Node.js, RoR, and .NET.
                 </p>
               </div>
             </div>
@@ -1232,7 +1299,9 @@
 
         <div class="row mt-4">
           <h3>Certifications</h3>
-          <div class="d-flex gap-2 flex-wrap certifications align-items-center justify-content-center">
+          <div
+            class="d-flex gap-2 flex-wrap certifications align-items-center justify-content-center"
+          >
             <img src="./assets/img/iso-27001.webp" alt="" />
             <img src="./assets/img/iso_iec_9001.png" alt="" />
             <img src="./assets/img/IAF.png" alt="" />
@@ -1302,4 +1371,37 @@
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById("web-development-lottie"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: "/assets/img/features/Animation-1742809848557.json",
+    });
+
+    lottie.loadAnimation({
+      container: document.getElementById("game-development-lottie"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: "/assets/img/features/Animation-742811562789.json",
+    });
+
+    lottie.loadAnimation({
+      container: document.getElementById("mobile-development-lottie"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: "/assets/img/features/Animation-1742811882074.json",
+    });
+
+    lottie.loadAnimation({
+      container: document.getElementById("ai-development-lottie"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: "/assets/img/features/Animation-1742812150388.json",
+    });
+  </script>
 </html>
