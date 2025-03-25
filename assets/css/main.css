@@ -148,7 +148,7 @@ h6 {
 }
 
 .header .logo img {
-  height: 3.25rem;
+  height: 3.5rem;
   margin-right: 8px;
 }
 
@@ -1394,7 +1394,7 @@ section,
 .faq .custom-accordion .accordion-item .btn-link {
   display: block;
   width: 100%;
-  padding: 15px 0;
+  padding: 0.938rem;
   text-decoration: none;
   text-align: left;
   color: var(--default-color);
@@ -2590,4 +2590,38 @@ section,
 }
 .footer_logo {
   height: 5rem;
+}
+
+#faq-lottie,
+#no-faq-lottie {
+  height: 440px;
+}
+
+.no-faq-heading {
+  color: var(--accent-color);
+  font-family: var(--heading-font);
+  font-size: 2.25rem;
+  font-weight: bolder;
+}
+.no-faq-text {
+  font-size: 1.25rem;
+  margin-top: 1rem !important;
+}
+.schedule_btn {
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  outline: none;
+  color: var(--background-color);
+  transition: all 0.5s;
+  font-weight: 600;
+}
+.schedule_btn:hover {
+  background-color: var(--background-color);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  transition: 0.5s;
 }
