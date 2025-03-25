@@ -132,6 +132,7 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
+
 .header {
   --background-color: rgba(255, 255, 255, 0);
   --heading-color: #ffffff;
@@ -2580,13 +2581,13 @@ section,
   width: 100%;
 }
 
-.certifications img{
+.certifications img {
   width: 8rem;
 }
-.certifications img:nth-child(3){
+.certifications img:nth-child(3) {
   width: 6rem;
   height: 6rem;
 }
-.footer_logo{
+.footer_logo {
   height: 5rem;
 }
