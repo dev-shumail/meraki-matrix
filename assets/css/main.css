@@ -431,7 +431,7 @@ h6 {
   font-family: var(--heading-font);
 }
 
-.footer h4{
+.footer h4 {
   font-weight: 600;
   font-size: 1.5rem;
   font-family: var(--default-font);
@@ -2662,7 +2662,6 @@ section,
   border-color: 1px solid var(--accent-color);
   box-shadow: none;
   padding-left: 0.85rem;
-  
 }
 
 .subscribe_send_btn {
@@ -2671,9 +2670,8 @@ section,
   background-color: var(--accent-color);
   color: white;
   border: none;
-
 }
-.subscribe_send_btn:hover{
+.subscribe_send_btn:hover {
   background-color: #0c647a;
 }
 
@@ -2685,17 +2683,20 @@ section,
     width: 100%;
     padding: 8px 0;
   }
+  .logo img {
+    width: 150px;
+  }
 }
 
-.footer p{
+.footer p {
   font-size: larger;
 }
 
-.footer__address_heading{
+.footer__address_heading {
   margin-bottom: 0 !important;
 }
 
-.footer__address_heading span{
+.footer__address_heading span {
   font-size: 1rem;
   font-weight: 300;
 }
